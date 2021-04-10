@@ -6,7 +6,11 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "babel": "^6.23.0",
     "bootstrap": "^4.6.0",
+    "jasmine-spec-reporter": "^6.0.0",
+    "karma-coverage": "^2.0.3",
+    "karma-jasmine-html-reporter": "^1.5.4",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
@@ -21,9 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npm run karma -- --single-run",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "karma": "BABEL_ENV=development NODE_ENV=test node_modules/karma/bin/karma start config/karma.conf.js"
+    "karma": "node_modules/karma/bin/karma start config/karma.conf.js"
   },
   "eslintConfig": {
     "extends": [
